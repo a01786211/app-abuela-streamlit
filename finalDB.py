@@ -18,7 +18,7 @@ st.set_page_config(
 
 MONGODB_URI = "mongodb+srv://a01786211_user:1234test@clusterapp.2wlkl3c.mongodb.net/?appName=ClusterApp"
 MONGODB_DB = "app_abuela"
-PUBLIC_ACCESS_PASSWORD = "1234"
+PUBLIC_ACCESS_PASSWORD = st.secrets["PUBLIC_ACCESS_PASSWORD"]
 
 @st.cache_resource
 def get_mongo_client():
